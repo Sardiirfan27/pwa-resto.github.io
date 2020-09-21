@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Restaurant Reviews</title>
+
+    <!--icons-->
+    <link rel="icon" href="img/initials-transparent.png">
+</head>
+
+<body>
+    <!-- Beginning header -->
+    <header>
+        <nav>
+            <h1 id="page-title" aria-label="Restaurant Reviews page header" tabindex="-1"><a href="/">Restaurant Reviews</a></h1>
+        </nav>
+    </header>
+    <!-- End header -->
+    <!-- Beginning main content -->
+    <main id="maincontent">
+        <!-- Beginning map -->
+        <section id="map-container">
+            <div id="map" aria-label="Map with multiple markers" tabindex="-1" role="application"></div>
+        </section>
+        <!-- End map -->
+        <section>
+            <!-- Beginning filter -->
+            <div class="filter-options" role="group">
+                <h2>Filter Results</h2>
+                <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" tabindex="1" aria-label="Search by neighborhood"  role="list">
+          <option value="all">All Neighborhoods</option>
+        </select>
+                <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()" tabindex="2" aria-label="Search by cuisine"  role="list">
+          <option value="all">All Cuisines</option>
+        </select>
+                <!-- End filter -->
+            </div>
+            <!-- Beginning restaurant cards -->
+            <ul id="restaurants-list" role="list"></ul>
+            <!-- End restaurant cards -->
+        </section>
+    </main>
+    <!-- End main content -->
+
+    <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+    <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlMNHz6HR7lDoFTndZ25ZQ3GOiuSFZvF8&libraries=places&callback=initMap"></script>
+
+    <footer id="footer">
+        <span>Sardi Irfansyah + Udacity (c)</span>
+        <span><a href="/"><strong>Restaurant Reviews</strong></a></span> <span>All Rights Reserved.</span></p>
+    </footer>
+
+</body>
+
+</html>

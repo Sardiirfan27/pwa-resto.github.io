@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Normalize.css for better cross-browser consistency -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Serif+Pro" rel="stylesheet">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <title>Restaurant Info</title>
+
+    <!--icons-->
+    <link rel="icon" href="img/initials-transparent.png">
+</head>
+
+<body class="inside">
+
+    <!-- Beginning header -->
+    <header aria-label="Breadcrumb">
+        <!-- Beginning nav -->
+        <nav>
+            <h1 id="page-title"><a href="/">Restaurant Reviews</a></h1>
+        </nav>
+        <!-- End nav -->
+        <!-- Beginning breadcrumb -->
+        <ul id="breadcrumb" role="navigation">
+            <li><a href="/">Home</a></li>
+        </ul>
+        <!-- End breadcrumb -->
+    </header>
+    <!-- End header -->
+
+    <!-- Beginning main -->
+    <main id="maincontent">
+        <!-- Beginning restaurant -->
+        <section id="restaurant-container">
+            <h2 id="restaurant-name" aria-label="Restaurant name"></h1>
+            <img id="restaurant-img">
+            <p id="restaurant-cuisine" aria-label="Restaurant cuisine type"></p>
+            <p id="restaurant-address" aria-label="Restaurant address"></p>
+            <section id="restaurant-sub-container">
+                <table id="restaurant-hours" aria-label="Restaurant opening hours"></table>
+            </section>
+            <!-- Beginning map -->
+            <section id="map-container" tabindex="-1">
+                <div id="map" aria-label="Map with single marker" role="application"></div>
+            </section>
+            <!-- End map -->
+        </section>
+        <!-- End restaurant -->
+        <!-- Beginning reviews -->
+        <section id="reviews-container" aria-label="List of restaurant reviews">
+            <ul id="reviews-list"></ul>
+        </section>
+        <!-- End reviews -->
+        <!-- Beginning footer -->
+        <footer id="footer">
+            <span>Sardi Irfansyah + Udacity</span>
+            <span><a href="/"><strong>Restaurant Reviews</strong></a></span> <span>All Rights Reserved.</span></p>
+        </footer>
+        <!-- End footer -->
+    </main>
+    <!-- End main -->
+
+    <!-- Beginning scripts -->
+    <!-- Database helpers -->
+    <script type="text/javascript" src="js/dbhelper.js"></script>
+    <!-- Main javascript file -->
+    <script type="text/javascript" src="js/restaurant_info.js"></script>
+    <!-- Google Maps -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlMNHz6HR7lDoFTndZ25ZQ3GOiuSFZvF8&libraries=places&callback=initMap"></script>
+    <!-- End scripts -->
+
+</body>
+
+</html>

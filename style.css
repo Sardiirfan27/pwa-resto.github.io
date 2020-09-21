@@ -1,0 +1,17 @@
+/* ul#skilled {
+    color: red;
+}
+ul.great li.favorite span {
+    color: rgb(142, 142, 226);
+} */
+
+/* color people blue */
+#skilled .favorite:not(#skilled) .highlight {
+    color: red;
+}
+
+#skilled .highlight:nth-of-type(1):nth-last-of-type(1) {
+    color: blue;
+}
+
+/* neither */
