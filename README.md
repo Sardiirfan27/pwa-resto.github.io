@@ -2,7 +2,6 @@
 
 ## Project Overview
 
-**Project acceptance date: 29 July 2018**
 
 **[Live preview](https://ajk-restaurant-reviews.netlify.com/)**
 
